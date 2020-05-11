@@ -1,0 +1,21 @@
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo bm --hex-string '|e2|' -m hashlimit --hashlimit-name tosterz --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo bm --hex-string '|c8|' -m hashlimit --hashlimit-name tosterx --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo bm --hex-string '|92|' -m hashlimit --hashlimit-name tosterc --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo bm --hex-string '|87|' -m hashlimit --hashlimit-name tosterv --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo bm --hex-string '|94|' -m hashlimit --hashlimit-name tosterb --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
+
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|e2|' -m hashlimit --hashlimit-name tostern --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|c8|' -m hashlimit --hashlimit-name tosterm --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|92|' -m hashlimit --hashlimit-name tosterl --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|87|' -m hashlimit --hashlimit-name tosterk --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|94|' -m hashlimit --hashlimit-name tosterj --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
