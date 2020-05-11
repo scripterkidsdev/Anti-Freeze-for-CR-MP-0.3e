@@ -1,21 +1,94 @@
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo bm --hex-string '|e2|' -m hashlimit --hashlimit-name tosterz --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo bm --hex-string '|c8|' -m hashlimit --hashlimit-name tosterx --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo bm --hex-string '|92|' -m hashlimit --hashlimit-name tosterc --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo bm --hex-string '|87|' -m hashlimit --hashlimit-name tosterv --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo bm --hex-string '|94|' -m hashlimit --hashlimit-name tosterb --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
+##это все антифризер
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e10|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e11|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e12|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e13|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e14|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e15|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e16|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e17|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e18|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e19|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e20|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e21|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e22|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e23|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e24|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e25|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e26|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e27|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e28|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e29|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e30|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e31|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e32|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e33|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e34|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e35|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e36|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e37|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e38|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e39|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e40|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e41|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e42|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e43|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e44|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e45|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e46|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e47|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e48|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e49|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e50|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e51|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e52|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e53|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e54|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e55|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e56|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e57|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e58|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e59|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e60|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e61|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e62|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e63|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e64|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e65|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e66|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e67|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e68|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e69|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e70|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e71|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e72|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e73|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e74|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e74|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e75|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e76|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e77|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e78|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e79|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e80|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e81|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e82|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e83|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e84|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e85|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e86|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e87|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e88|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e89|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e90|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e91|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e92|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e93|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e94|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e95|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e96|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e97|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e98|' -m length --length 43 -j DROP
+iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|1e99|' -m length --length 43 -j DROP
 
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|e2|' -m hashlimit --hashlimit-name tostern --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|c8|' -m hashlimit --hashlimit-name tosterm --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|92|' -m hashlimit --hashlimit-name tosterl --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|87|' -m hashlimit --hashlimit-name tosterk --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -m string --algo kmp --hex-string '|94|' -m hashlimit --hashlimit-name tosterj --hashlimit-upto 5/sec --hashlimit-burst 7 --hashlimit-mode srcip --hashlimit-srcmask 32 -j ACCEPT
-iptables -t mangle -A PREROUTING -t raw -p udp -m multiport --dports 3307:9999 -j DROP
+
